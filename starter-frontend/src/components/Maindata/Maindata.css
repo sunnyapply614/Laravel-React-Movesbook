@@ -1,0 +1,223 @@
+/* General Container */
+.main-container {
+    font-family: Arial, sans-serif;
+    margin: 10px auto;
+    width: 98%;
+    padding: 10px 0;
+    background-color: #f9f9f9; /* Light background */
+  }
+/* Sliptwo CSS */
+  .Sliptwo-container {
+    padding: 10px 0;
+    background-color: #f9f9f9; /* Light background */
+  }
+  
+  /* Header Bar */
+  .header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7092BE; /* Light blue */
+    padding: 7px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-btn-left {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-left: 25px;
+    /* margin-right: 20px; */
+  }
+
+  .toggle-btn-right {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding-right: 25px;
+    /* margin-right: 10px; */
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    color: yellow;
+  }
+  
+  .header-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  /* Expandable Red-Bordered Section */
+  .bordered-content {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: center;
+  }
+  
+  /* Customer Testimonials Section */
+  .testimonials-section {
+    margin-top: 10px;
+    /* background-color: #607D8B; */
+    border-radius: 5px;
+    overflow: hidden;
+    color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonials-section h2 {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  
+  .testimonials-grid {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 10px 0px;
+    background-color: #e6e6e6; /* Light gray background for grid */
+    border-radius: 0 0 5px 5px;
+  }
+  
+  .testimonial-card,
+  .sponsor-card {
+    width: 30%;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #333;
+  }
+  
+  .testimonial-card {
+    background-color: #FF6347; /* Light red for testimonial */
+    color: white;
+    font-weight: bold;
+  }
+  
+  .sponsor-card {
+    background-color: #333;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Signup Section */
+  .signup-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-button {
+    background-color: #00BFFF; /* Light blue */
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .signup-button:hover {
+    background-color: #007FFF; /* Slightly darker blue */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .testimonial-card,
+    .sponsor-card {
+      width: 100%;
+    }
+  }
+  
+/* Appstore.css */
+
+/* Container for the button pack */
+.button-pack {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Space between buttons */
+    padding: 20px;
+    padding-left: 90px;
+    padding-right: 0px;
+    justify-content: space-between;
+  }
+  
+  /* Individual button */
+  .button-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    /* background-color: #DDDDDD; */
+    border: none;
+    width: 160px; /* Set button width */
+    height: 60px;
+    /* clip-path: polygon(15px 0, 100% 0, 100% 100%, 0 100%); */
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 5% 100%, 0 50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .css-1588512-MuiButtonBase-root-MuiButton-root{
+    justify-content: flex-start!important;
+  }
+  
+  .button-item .icon {
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  .button-item .label {
+    font-size: 14px;
+  }
+
+   /* Hover effect */
+   .button-item {
+    background-color: #DDDDDD!important; /* Red background */
+    color: white;
+  }
+  
+  /* Hover effect */
+  .button-item:hover {
+    background-color: #d0021b!important; /* Red background */
+    color: white;
+  }
+  
+  /* Active (clicked) button style */
+  .button-item.active {
+    background-color: #d0021b!important;
+    color: white;
+  }
+  
+  /* Optional: Add text-shadow for the text to make it pop */
+  .button-item.active .label {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  .icon {
+    color: white!important;
+  }
+
+  
+  

@@ -1,0 +1,78 @@
+.header {
+    background-color: #8B0000!important; /* Dark red background */
+  }
+  
+  .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+  }
+  
+  .subtitle {
+    display: block;
+    font-size: 12px;
+    color: #FFD700; /* Gold color */
+    margin-top: -4px;
+  }
+  
+  .logo-section {
+    display: flex;
+    height: 80px;
+    justify-content: flex-start!important;
+  }
+  
+  .login-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-field {
+    background-color: #fff;
+    border-radius: 4px;
+    width: 12vw;
+  }
+  
+  .login-button {
+    background-color: #60CEE5; 
+    color: #fff;
+    width: 5vw;
+  }
+  
+  .forgot-password {
+    color: #FFD700; /* Gold color */
+    font-size: 12px;
+    cursor: pointer;
+    width: 4vw;
+  }
+  
+  .social-button {
+    color: #fff!important;
+    background-color: #4267B2!important;
+    text-transform: none;
+    width: 10vw;
+    font-size: 12px!important;
+  }
+  
+  .facebook-button {
+    color: #fff!important;
+    background-color: #4267B2!important; 
+    text-transform: none;
+    width: 11vw;
+    font-size: 12px!important;
+  }
+  
+  .signup-button {
+    background-color: #FF4500; /* Bright red */
+    color: #fff;
+    text-transform: none;
+    width: 8vw;
+    font-size: 12px!important;
+  }
+  
