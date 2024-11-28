@@ -15,7 +15,7 @@ import { Twitter, Facebook, YouTube, Pinterest, RssFeed } from "@mui/icons-mater
 
 const HeaderTab = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "#333", padding: "10px 0" }}>
+    <AppBar position="static" sx={{ backgroundColor: "#333" }}>
       <Toolbar sx={{ justifyContent: "space-between" }}>
         {/* Left Section */}
         <Box sx={{ display: "flex", gap: 3 }}>
