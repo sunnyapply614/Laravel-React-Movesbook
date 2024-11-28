@@ -5,6 +5,7 @@ import Navigation from "../Navigation/Navigation";
 import HeroSlider from "../Slider/HeroSlider";
 import SubNavbar from "../SubNav/SubNavbar";
 import Maindata from "../Maindata/Maindata";
+import Footer from "../Footer/Footer";
 
 console.log('dash');
 
@@ -18,6 +19,7 @@ function DashboardPage() {
         <HeroSlider />
         <SubNavbar />
         <Maindata />
+        <Footer />
       </div>
     </>
   );
