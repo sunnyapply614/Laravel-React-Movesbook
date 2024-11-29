@@ -1,11 +1,19 @@
 import React, {useState} from "react";
-import { Box, Typography, Button, TextField, Tabs, Tab } from "@mui/material";
+import { Box, Typography, Button, TextField, Tabs, Tab, FormControl, InputLabel, Select, MenuItem } from "@mui/material";
 import Grid from "@mui/system/Grid";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 // import SelectOption from "@material-tailwind/react/components/Select/SelectOption";
 
 const Homevideo = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [country, setCountry] = useState('');
+  const [gender, setGender] = useState('');
+
+  const countries = ['USA', 'Canada', 'UK', 'Australia'];
+  const genders = ['Male', 'Female', 'Other'];
 
   const [isOpen, setIsOpen] = useState(false);
   const [value, setValue] = useState(0);
@@ -18,8 +26,14 @@ const Homevideo = () => {
     setValue(newValue);
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log({ name, email, password, country, gender });
+  };
+
   return (
-    <Box sx={{ padding: 2, pr: 5, backgroundColor: "#fff", display: "block", height: "650px", justifyItems: "flex-end" }}>
+    <Box sx={{ padding: 2, pr: 5, backgroundColor: "#fff", display: "block", height: "590px", justifyItems: "flex-end" }}>
       <Box
         sx={{
           backgroundColor: "#800000",
@@ -115,58 +129,109 @@ const Homevideo = () => {
               backgroundColor: "#f9f9f9",
               display: "block",
               width: "700px",
-              // height: "400px"
+              height: "100%"
               // height: "100%"
             }}
           >
-            <Button
-              variant="contained"
-              sx={{
-                backgroundColor: "#00bfff",
-                color: "#fff",
-                marginBottom: 2,
-                width: "200px",
-              }}
-            >
-              🔒 Social Login
-            </Button>
-            <TextField
-              fullWidth
-              variant="outlined"
-              label="Username"
-              size="small"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              variant="outlined"
-              label="First Name"
-              size="small"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              variant="outlined"
-              label="Last Name"
-              size="small"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              variant="outlined"
-              label="Email"
-              size="small"
-              margin="normal"
-            />
-            <TextField
-              fullWidth
-              variant="outlined"
-              label="Password"
-              size="small"
-              type="password"
-              margin="normal"
-            />
-
+            <Box>
+              <Button
+                variant="contained"
+                sx={{
+                  backgroundColor: "#00bfff",
+                  color: "#fff",
+                  width: "200px",
+                }}
+              >
+                🔒 Social Login
+              </Button>
+            </Box>
+            <Box sx={{display: 'block', height: '300px', overflow: 'auto'}}>
+              <TextField
+                fullWidth
+                variant="outlined"
+                label="Username"
+                size="small"
+                margin="normal"
+              />
+              <TextField
+                fullWidth
+                variant="outlined"
+                label="First Name"
+                size="small"
+                margin="normal"
+              />
+              <TextField
+                fullWidth
+                variant="outlined"
+                label="Last Name"
+                size="small"
+                margin="normal"
+              />
+              <TextField
+                fullWidth
+                variant="outlined"
+                label="Email"
+                size="small"
+                margin="normal"
+              />
+              <TextField
+                fullWidth
+                variant="outlined"
+                label="Password"
+                size="small"
+                type="password"
+                margin="normal"
+              />
+              <TextField
+                fullWidth
+                variant="outlined"
+                label="Repeat Password"
+                size="small"
+                type="repassword"
+                margin="normal"
+              />
+              <FormControl fullWidth variant="outlined" size="small" margin="normal">
+                <InputLabel>Country</InputLabel>
+                <Select
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  label="Country"
+                >
+                  {countries.map((country) => (
+                    <MenuItem key={country} value={country}>{country}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              <FormControl fullWidth variant="outlined" size="small" margin="normal">
+                <InputLabel>Gender</InputLabel>
+                <Select
+                  value={gender}
+                  onChange={(e) => setGender(e.target.value)}
+                  label="Gender"
+                >
+                  {genders.map((gender) => (
+                    <MenuItem key={gender} value={gender}>{gender}</MenuItem>
+                  ))}
+                </Select>
+              </FormControl>
+              {/* Button */}
+              <Box sx={{gap: '50px'}}>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  sx={{ backgroundColor: "#880517", color: "#fff", marginTop: 2, width: '150px' }}
+                >
+                  Submit
+                </Button>
+                <Button
+                  type="submit"
+                  variant="contained"
+                  sx={{ backgroundColor: "#880517", color: "#fff", marginTop: 2, width: '150px' }}
+                >
+                  Continue
+                </Button>
+              </Box>
+            </Box>
           </Box>
         </Box>
        )}
