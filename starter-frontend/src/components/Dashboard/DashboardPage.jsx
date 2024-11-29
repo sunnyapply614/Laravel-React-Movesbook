@@ -6,6 +6,7 @@ import HeroSlider from "../Slider/HeroSlider";
 import SubNavbar from "../SubNav/SubNavbar";
 import Maindata from "../Maindata/Maindata";
 import Footer from "../Footer/Footer";
+import Sidetab from "../Side/Sidetab";
 
 console.log('dash');
 
@@ -20,6 +21,7 @@ function DashboardPage() {
         <SubNavbar />
         <Maindata />
         <Footer />
+        <Sidetab />
       </div>
     </>
   );
