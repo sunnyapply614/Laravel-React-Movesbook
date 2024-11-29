@@ -16,7 +16,6 @@ function DashboardPage() {
       <div>
         <HeaderTab /> 
         <Header /> 
-        <Navigation />
         <HeroSlider />
         <SubNavbar />
         <Maindata />

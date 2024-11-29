@@ -41,11 +41,11 @@ const SubNavbar = () => {
             <Tab value={1} label="Athletes" />
             <Tab value={2} label="coaches" />
             <Tab value={3} label="teams" />
-            <Tab value={3} label="testimonials" />
-            <Tab value={3} label="populars" />
-            <Tab value={3} label="users" />
-            <Tab value={3} label="last logged" />
-            <Tab value={3} label="our clubs" />
+            <Tab value={4} label="testimonials" />
+            <Tab value={5} label="populars" />
+            <Tab value={6} label="users" />
+            <Tab value={7} label="last logged" />
+            <Tab value={8} label="our clubs" />
         </Tabs>
 
       </Toolbar>

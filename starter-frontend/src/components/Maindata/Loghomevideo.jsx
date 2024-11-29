@@ -33,7 +33,7 @@ const Homevideo = () => {
   };
 
   return (
-    <Box sx={{ padding: 2, pr: 5, backgroundColor: "#fff", display: "block", height: "590px", justifyItems: "flex-end" }}>
+    <Box sx={{ padding: 2, pr: 5, backgroundColor: "#fff", display: "block", height: "500px", justifyItems: "flex-end" }}>
       <Box
         sx={{
           backgroundColor: "#800000",
@@ -145,7 +145,7 @@ const Homevideo = () => {
                 🔒 Social Login
               </Button>
             </Box>
-            <Box sx={{display: 'block', height: '300px', overflow: 'auto'}}>
+            <Box sx={{display: 'block', height: '210px', overflow: 'auto'}}>
               <TextField
                 fullWidth
                 variant="outlined"
