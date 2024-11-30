@@ -10,8 +10,8 @@ import {
   IconButton,
   Collapse,
   Tab,
-  Tabs,
 } from "@mui/material";
+import {TabList, TabPanel, TabContext} from '@mui/lab';
 import { Star } from "@mui/icons-material";
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
@@ -20,7 +20,7 @@ import Atheletes from "./Atheletes";
 const HeaderTab = () => {
 
   const [open, setOpen] = useState(false);
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState('1');
 
   const toggleOpen = () => {
       setOpen(!open);
@@ -75,9 +75,10 @@ const HeaderTab = () => {
       </Toolbar>
       <Collapse in={open}>
         {/* Tabs Section */}
-        <Box sx={{ width: '100%', backgroundColor: "#E8E8E8", justifyContent: "flex-start" }}>
-            <Tabs
-                value={value}
+        <Box sx={{ width: '100%', backgroundColor: "#E8E8E8", justifyContent: "flex-start", display: 'block' }}>
+          <TabContext value={value}>
+            <Box>
+            <TabList
                 onChange={handleChange}
                 textColor="secondary"
                 indicatorColor="secondary"
@@ -89,15 +90,25 @@ const HeaderTab = () => {
                     width: '100%'  // Ensures it takes full width
                   }}
             >
-                <Tab value={0} label="Athletes & Single users" />
-                <Tab value={1} label="Coaches" />
-                <Tab value={2} label="Teams" />
-                <Tab value={3} label="Clubs" />
-            </Tabs>
+                <Tab value="1" label="Athletes & Single users" />
+                <Tab value="2" label="Coaches" />
+                <Tab value="3" label="Teams" />
+                <Tab value="4" label="Clubs" />
+            </TabList>
+            </Box>
+            <Box sx={{ width: '100%', backgroundColor: "#E8E8E8", justifyContent: "flex-start", display: 'block' }}>
+              <TabPanel value="1" ><Atheletes /></TabPanel>
+            </Box>
+          </TabContext>
+          
         </Box>
-        {value === 0 && (
+        
+        {/* {value === 0 && (
             <Atheletes />
         )}
+        {value === 1 && (
+            <Customdetails />
+        )} */}
       </Collapse>
     </AppBar>
   );
