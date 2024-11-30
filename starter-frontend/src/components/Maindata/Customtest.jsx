@@ -99,16 +99,8 @@ const HeaderTab = () => {
             <Box sx={{ width: '100%', backgroundColor: "#E8E8E8", justifyContent: "flex-start", display: 'block' }}>
               <TabPanel value="1" ><Atheletes /></TabPanel>
             </Box>
-          </TabContext>
-          
+          </TabContext>          
         </Box>
-        
-        {/* {value === 0 && (
-            <Atheletes />
-        )}
-        {value === 1 && (
-            <Customdetails />
-        )} */}
       </Collapse>
     </AppBar>
   );

@@ -27,17 +27,20 @@ const HeaderTab = () => {
         </Box>
 
         {/* Right Section */}
-        <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+        <Box sx={{ display: "flex", alignItems: "center", gap: 2, pl: 5 }}>
           <Button color="inherit" href="#support">Support</Button>
           <Button color="inherit" href="#forum">Forum</Button>
           <Button color="inherit" href="#blog">Blog</Button>
-          <Box sx={{ display: "flex", gap: 1, pl: 10 }}>
+          <Box sx={{ display: "flex", gap: 1 }}>
             <IconButton href="#twitter" color="inherit" aria-label="Twitter">
               <Twitter />
             </IconButton>
             <IconButton href="#facebook" color="inherit" aria-label="Facebook">
               <Facebook />
             </IconButton>
+            {/* <IconButton href="#google" color="inherit" aria-label="google">
+              <Google />
+            </IconButton> */}
             <IconButton href="#youtube" color="inherit" aria-label="YouTube">
               <YouTube />
             </IconButton>
