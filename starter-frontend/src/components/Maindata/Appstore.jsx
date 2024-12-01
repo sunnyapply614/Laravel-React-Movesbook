@@ -13,6 +13,7 @@ const Appstore = () => {
 
   const buttons = [
     { id: 1, label: 'Android', icon: <img src="assets/img/dashboard/icon/android_icon.png" alt="Android" /> },
+    { id: 2, label: 'Android', icon: <img src="assets/img/dashboard/icon/blackberry_icon.png" alt="Android" /> },
     { id: 2, label: 'BlackBerry', icon: <img src="assets/img/dashboard/icon/blackberry_icon.png" alt="BlackBerry" /> },
     { id: 3, label: 'iPhone', icon: <img src="assets/img/dashboard/icon/iphone_icon.png" alt="iPhone" /> },
     { id: 4, label: 'Nokia S60', icon: <img src="assets/img/dashboard/icon/nokias60_icon.png" alt="Nokia" /> },
@@ -49,7 +50,7 @@ const Appstore = () => {
           sx={{
             backgroundColor: '#D50000',
             color: '#fff',
-            marginTop: 2,
+            marginTop: 1,
             fontWeight: 'bold',
             width: '100%',
             height: '50px',
